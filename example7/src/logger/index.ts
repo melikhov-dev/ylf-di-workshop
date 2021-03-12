@@ -1,4 +1,4 @@
+import {AbstractLoggerService} from "./abstract-logger.service";
 
-
-
-export {ILogger} from './types';
+export {LOGGER_TOKEN} from "./constants";
+export {AbstractLoggerService}

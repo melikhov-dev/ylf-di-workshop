@@ -1,4 +1,4 @@
-import {ILogger} from "./types";
+import {ILogger} from "./ILogger";
 
 export class Context {
     static get logger(): ILogger {

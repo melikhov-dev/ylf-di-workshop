@@ -1,9 +1,11 @@
 export class Locator {
-    private static dictionary: Map<string, any> = new Map();
-    static getService<T>(token: string): T {
-        return this.dictionary.get(token);
+    private static _dictionary: Map<string, any> = new Map();
+
+    static register(token: string, instance: any) {
+        this._dictionary.set(token, instance);
     }
-    static register(token, instance) {
-        this.dictionary.set(token, instance);
+
+    static getService<T>(token: string):T {
+        return this._dictionary.get(token);
     }
 }

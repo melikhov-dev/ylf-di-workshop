@@ -1,9 +1,8 @@
 import { Injectable } from '@nestjs/common';
-import {ILogger} from "../types";
-import {AbstractLogger} from "../abstract-logger";
+import {AbstractLoggerService} from "../abstract-logger.service";
 
 @Injectable()
-export class ConsoleLoggerService extends AbstractLogger{
+export class ConsoleLoggerService extends AbstractLoggerService{
     error(msg: string): void {
         console.log(msg);
     }
@@ -15,4 +14,5 @@ export class ConsoleLoggerService extends AbstractLogger{
     warn(msg: string): void {
         console.log(msg);
     }
+
 }

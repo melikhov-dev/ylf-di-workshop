@@ -1,4 +1,4 @@
-import {ILogger} from "./types";
+import {ILogger} from "./ILogger";
 
 export class PinoLogger implements ILogger {
     error(msg: string): void {

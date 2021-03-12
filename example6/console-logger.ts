@@ -1,11 +1,11 @@
-import { injectable } from "inversify";
-import {ILogger} from "./types";
+import {ILogger} from "./ILogger";
+import {injectable} from "inversify";
 import "reflect-metadata";
 
 @injectable()
 export class ConsoleLogger implements ILogger {
     constructor() {
-        console.log('Create new logger')
+        console.log('Logger initialized');
     }
     error(msg: string): void {
         console.log(msg);

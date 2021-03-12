@@ -1,17 +1,14 @@
-import {Injectable, Scope} from '@nestjs/common';
-import {AbstractLogger} from "../abstract-logger";
+import { Injectable } from '@nestjs/common';
+import {AbstractLoggerService} from "../abstract-logger.service";
 
 @Injectable()
-export class PinoLoggerService extends AbstractLogger {
+export class PinoLoggerService extends AbstractLoggerService{
     error(msg: string): void {
-        console.log(msg);
     }
 
     info(msg: string): void {
-        console.log(msg);
     }
 
     warn(msg: string): void {
-        console.log(msg);
     }
 }

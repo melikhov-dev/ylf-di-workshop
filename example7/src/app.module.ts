@@ -5,10 +5,7 @@ import { PaymentModule } from './payment/payment.module';
 import { LoggerModule } from './logger/logger.module';
 
 @Module({
-  imports: [
-      PaymentModule,
-      LoggerModule
-  ],
+  imports: [PaymentModule, LoggerModule],
   controllers: [AppController],
   providers: [AppService],
 })

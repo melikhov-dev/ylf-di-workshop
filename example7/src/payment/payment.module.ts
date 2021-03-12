@@ -3,9 +3,9 @@ import { PaymentService } from './payment.service';
 import {LoggerModule} from "../logger/logger.module";
 
 @Module({
-  providers: [PaymentService],
-  imports: [
-      LoggerModule
-  ]
+  providers: [
+      PaymentService
+  ],
+  imports: [LoggerModule]
 })
 export class PaymentModule {}

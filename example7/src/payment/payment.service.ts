@@ -1,10 +1,9 @@
-import {Injectable, Scope} from '@nestjs/common';
-import {AbstractLogger} from "../logger/abstract-logger";
+import {Injectable} from '@nestjs/common';
+import {AbstractLoggerService} from "../logger";
 
 @Injectable()
 export class PaymentService {
-    constructor(private readonly _logger: AbstractLogger) {}
-
+    constructor(private readonly _logger: AbstractLoggerService) {}
     sendMoney() {
         this._logger.info('Info');
         return true;
