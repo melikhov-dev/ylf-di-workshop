@@ -1,4 +1,4 @@
-import {AbstractLoggerService} from "./abstract-logger.service";
+import {AbstractLoggerService, DynamicAbstractLogger} from "./abstract-logger.service";
 
 export {LOGGER_TOKEN} from "./constants";
-export {AbstractLoggerService}
+export {AbstractLoggerService, DynamicAbstractLogger};
