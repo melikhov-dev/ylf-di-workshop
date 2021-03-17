@@ -7,3 +7,5 @@ export abstract class AbstractLoggerService implements ILogger {
 
     abstract warn(msg: string): void;
 }
+
+export abstract class DynamicAbstractLogger extends AbstractLoggerService {};
